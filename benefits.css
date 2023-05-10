@@ -1,0 +1,40 @@
+.benefits-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 10vh;
+
+    background-color: rgb(40, 40, 40);
+}
+
+.points-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2vh;
+    row-gap: 4vh;
+}
+
+.points {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.point-img {
+    align-self: center;
+    height: 20vh;
+    border-radius: 2vh;
+}
+
+.point-title {
+    text-align: center;
+    align-self: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    color: rgb(205, 178, 146);
+    font-size: 3.2vh;
+
+}

@@ -1,0 +1,73 @@
+.enquire-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 10vh;
+}
+
+.enquire-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3vh;
+}
+
+h3 {
+    color: rgb(205, 178, 146);
+    text-align: center;
+    font-size: 5vh;
+}
+
+.form-container {
+    padding: 3vh;
+    padding-top: 0vh;
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    justify-self: flex-start;
+}
+
+.input-box {
+    font-size: 2.5vh;
+    height: 4vh;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid rgb(238, 52, 114);
+    color: rgb(205, 178, 146);
+}
+
+.submit-button {
+    background-color: rgb(40, 40, 40);
+    color:  rgb(205, 178, 146);
+    border: none;
+    border-radius: 1vh;
+    font-size: 3vh;
+    align-self: center;
+    box-shadow:  1vh, 10vh, 0, green;
+}
+
+.submit-button:hover {
+    color: rgba(255, 0, 0, 0.784);
+}
+
+.text-container {
+    padding: 3vh;
+    padding-top: 0vh;
+    flex: 6;
+    justify-self: flex-start;
+}
+
+.enquire-desciption-title {
+    color: rgb(205, 178, 146);
+    font-size: 3.2vh;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+p {
+    color: rgb(195, 168, 136);
+    font-size: 2.6vh
+}

@@ -1,0 +1,138 @@
+.title-container {
+    margin-top: 10%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+.cloud-byte {
+    content:url(/CloudPreByte.png);
+    width: 33%;
+    transition: content 0.5s;
+}
+
+.cloud-byte:hover {
+    content: url(/CloudByte.png);
+}
+
+.title-text {
+    display: flex;
+    padding-right: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1, h2{
+    color: rgb(255, 228, 196);
+    margin-top: 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10vw;
+    height: fit-content;
+}
+
+h2 {
+    font-size: 4vw;
+    color: rgb(245, 218, 186);
+}
+
+p {
+    font-size: 2vw;
+    color: rgb(205, 178, 146);
+}
+
+.services-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    padding-top: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 10vh;
+}
+
+.services-title {
+    color: rgb(205, 178, 146);
+    text-align: center;
+    font-size: 3vw;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2vh;
+    row-gap: 4vh;
+}
+
+.cards-background {
+    background-color: rgb(25, 25, 25);
+    height: 60vh;
+    flex: 1;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-background:hover {
+    background-color: rgb(205, 178, 146);
+    cursor: pointer;
+}
+
+.cards-foreground {
+    width: 90%;
+    height: 90%;
+    padding: 1vh;
+    border-radius: 1vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    row-gap: 2vh;
+    align-items:center;
+    justify-content: start;
+    background-color: rgb(25, 25, 25);
+}
+
+.card-image {
+    height: 12vh;
+    margin-bottom: 1vh;
+    
+}
+
+.card-title{
+    color: rgb(205, 178, 146);
+    font-size: 3.2vh;
+    margin: 0px;
+    margin-bottom: 2px;
+    padding: 0;
+    height: fit-content;
+}
+
+.card-description {
+    color: rgb(195, 168, 136);
+    font-size: 2.6vh;
+}
+
+.card-links {
+    color: rgb(205, 178, 146);
+    width: 100%;
+}
+
+.card-price {
+    color: rgba(255, 0, 0, 0.784);
+    display: block;
+    font-size: 3vh;
+    margin-top: auto;
+}
