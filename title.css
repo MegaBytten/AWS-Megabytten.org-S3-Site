@@ -1,0 +1,49 @@
+.title-container {
+    margin-top: 10%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+.cloud-byte {
+    width: 33%;
+    transition: content 0.5s;
+}
+
+.title-text {
+    display: flex;
+    padding-right: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1, h2{
+    color: rgb(255, 228, 196);
+    margin-top: 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10vw;
+    height: fit-content;
+}
+
+h2 {
+    font-size: 4vw;
+    color: rgb(245, 218, 186);
+}
+
+h4{
+    color: rgb(205, 178, 146);
+    text-align: center;
+    font-size: 3vw;
+}
+
+p {
+    font-size: 2vw;
+    color: rgb(205, 178, 146);
+}
+

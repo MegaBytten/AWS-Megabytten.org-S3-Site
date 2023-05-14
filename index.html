@@ -49,29 +49,187 @@
             
     </header>
 
-
-<link rel="stylesheet" href="services.css">
 <!-- This is Opening Image and Title Div (CloudByte) -->
+<link rel="stylesheet" href="title.css">
 <div class="title-container">
     <img class="cloud-byte"
         alt="MegaBytten's primary service icon, which is a cloud with a bite taken out of it."
+        src="CloudPreByte.png"
+        onmouseover="switchByteImage(this)"
+        onmouseleave="switchPreByteImage(this)"
     >
 
     <div class="title-text">
         <h1 style="color: rgb(255, 0, 0, 0.784);">Mega<span style="color: rgb(255, 228, 196);">Bytten</span></h1>
         <h2>Take a Byte out of your troubles with our Tech Solutions</h2>
     </div>
+</div>
+
+<!-- This is Digitise section-->
+<link rel="stylesheet" href="digitise.css">
+<div class="digitise-container">
+    <div class="digitise-title">
+        <h3 class="digitise-title-text">Digitise Your Business</h3>
+    </div>
+
+    <div class="benefits-section">
+        <div class="text-row">
+            <div>
+                <h4 style="border-bottom: 5px solid; padding-bottom: 1.5vh; margin-right: 1vw; margin-left: 1vw;">
+                    Choosing MegaBytten
+                </h4>
+                <p style="margin-left: 2vw; margin-right: 2vw;">
+                    Choosing MegaBytten means choosing a select few experts to go with you on the journey of building an online presence for your business.
+                    <br><br>
+                    Our curated <strong>MegaBytten Digitising packages</strong> act as a springboard for deciphering what type of online presence your business needs.
+                    Choosing the direction best suited for your business is by far the most important step - which is why our digitising journey together starts with
+                    consultations so we can exact the requirements you need.
+                    We understand digitising your business can be time costly, but by working with us you can be as hands-on or hands-off as you like.
+                    We've developed our packages and services so you can tune in at any time to: check on progress, make changes, ask questions, or wait for us
+                    to draft it all up for you.
+                    <br><br>
+                    We look forward to sharing our digitising expertise with you, so don't hesitate to contact us for any reason!
+                </p>
+            </div>
+            <div>
+                <h4 style="border-bottom: 5px solid; padding-bottom: 1.5vh; margin-right: 1vw; margin-left: 1vw;">
+                    Digitising your business
+                </h4>
+                <p style="margin-left: 2vw; margin-right: 2vw;">
+                    Focus on the business you love, while we do the same.
+                    <br><br>
+                    Digitising your business with MegaBytten starts with consultations to decipher your business needs, followed by creating a network of
+                    microservices that captures the beauty of your business. Our team is experienced in many different areas and services, allowing you to 
+                    explore any ideas of interest, and watch as we make it happen for you. We develop, configure, test, deploy and maintain all of your services actively - if you ever want
+                    to make changes or add new features, it's as simple as calling us up.
+                    Our top services in digitisation include: simple domain website hosting, email/sms-linked enquiry and booking systems,
+                    business (data) intelligence reports, cloud migration, and microservice architecture migration.
+                    <br><br>
+                    Digitising your business can be an intimidating, difficult task, but we are here to make it a quick and enjoyable journey.
+                </p>
+            </div>
+        </div>
+        <div class="img-row">
+            <img src="vaporwave_expertise.png" alt="Vaporwave showcasing MegaBytten experts" class="benefits-img">
+            <img src="vaporwave_digitise.png" alt="Vaporwave image showcasing someone successfully digitising their business" class="benefits-img">
+        </div>
+
+    </div>
     
 </div>
 
+<!-- This is Digitise Packages section -->
+<div class="digitise-packages-section">
+    <h4 style="font-size: 6vw; margin: 6vh;">
+        MegaBytten Digitising Packages
+    </h4>
+    <div class="digitise-packages">
+            <!-- This is "Basic Package"-->
+            <div
+                class="package-content" 
+                onmouseover="basicPackageMouseEvent(true)"
+                onmouseleave="basicPackageMouseEvent(false)"
+            > 
+                <div class="bubble-section" style="border-color: #f78100;">
+                    <span class="package-name" id="basicpckg">
+                        Basic Package
+                    </span>
+                    
+                </div>
+                <div class="features-section" style="border-color: #f78100;">
+                    <ul class="features-text">
+                        <li>First 90-min consultation FREE</li>
+                        <li>Dedicated domain and static website hosting </li>
+                        <li>Fully managed website SMS/email enquiry system</li>
+                        <li>Up to 25GB of HTML, CSS, Javascript file hosting</li>
+                        <li>Unlimited website pages</li>
+                        <li>Assisted static website migration to AWS</li>
+                        <li>Full DDoS protection</li>
+                        <li>99.999% uptime guarantee</li>
+                        <li>3 day support request turnover</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- This is "Business Package"-->
+            <div 
+                class="package-content" 
+                onmouseover="businessPackageMouseEvent(true)"
+                onmouseleave="businessPackageMouseEvent(false)"
+            >
+                <div class="bubble-section" style="border-color: #e33131; background-image: url(package-prime.png);">
+                    <span class="package-name" id="businesspckg">
+                        Business Package
+                    </span>
+                    
+                </div>
+                <div class="features-section" style="border-color: #e33131;">
+                    <ul class="features-text">
+                        <li>First 2x 90-min consultations FREE</li>
+                        <li>Dedicated domain and static website hosting </li>
+                        <li>Fully managed website SMS/email enquiry system</li>
+                        <li>Up to 50GB of website file hosting</li>
+                        <li>Unlimited website pages</li>
+                        <li>Fully managed static website migration to AWS</li>
+                        <li>Fully managed database set up and configuration</li>
+                        <li>Weekly/Monthly Business Analytics reports</li>
+                        <li>Tracked website metrics &#40page usage, location, unique visits&#41</li>
+                        <li>Assisted lift-and-shift to AWS for web-apps</li>
+                        <li>Full DDoS protection</li>
+                        <li>99.999% uptime guarantee</li>
+                        <li>2 day support request turnover</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- This is "Deluxe Package"-->
+            <div 
+                class="package-content" 
+                onmouseover="deluxePackageMouseEvent(true)"
+                onmouseleave="deluxePackageMouseEvent(false)"
+            >
+                <div class="bubble-section" style="border-color: #e9328d; background-image: url(package-deluxe.png);">
+                    <span class="package-name" id="deluxepckg">
+                        Deluxe Package
+                    </span>
+                    
+                </div>
+                <div class="features-section" style="border-color: #e9328d;">
+                    <ul class="features-text">
+                        <li>First 2x 90-min consultations FREE</li>
+                        <li>Dedicated domain and static website hosting </li>
+                        <li>Fully managed website SMS/email enquiry and booking system</li>
+                        <li>Up to 100GB of website file hosting</li>
+                        <li>Unlimited website pages</li>
+                        <li>Fully managed website, web-app and website-extensions migration to AWS</li>
+                        <li>Fully managed database set up and configuration</li>
+                        <li>Fully managed database migration</li>
+                        <li>Assisted microservice architecture migration</li>
+                        <li>Weekly/Monthly Business Analytics reports and tracked metrics</li>
+                        <li>Cloud security hardening against OWASP top 10</li>
+                        <li>2 day &#40weekend inclusive&#41 support request turnover</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- This is Services Section -->
+<link rel="stylesheet" href="services.css">
 <div class="services-container">
-    <span class="services-title"><h3>View Our Tech Solutions</h3></span>
+<h3 class="services-title">Individual Services</h3>
+<p style="margin-left: 2vw; margin-right: 2vw;">
+    Know what you want?
+    <br><br>
+    
+</p>
+
     <div class="cards-container">
         <div class="cards-row">
             <!-- This is our First Card! AWS -->
-            <div class="cards-background" onclick="awsRedirect()"> 
+            <div class="cards-background" onclick="location.href= '/services/aws'"> 
                 <div class="cards-foreground">
                     <img src="awslogo.png" alt="a PNG of Amazon Web Service's logo" class="card-image">
                     <h4 class="card-title">AWS Cloud Solutions</h4>
@@ -87,7 +245,7 @@
             </div>
             <!-- This is the end of our First Card! AWS -->
             <!-- This is our Second Card! Data -->
-            <div class="cards-background" onclick="dataRedirect()"> 
+            <div class="cards-background" onclick="location.href= '/services/data'"> 
                 <div class="cards-foreground">
                     <img src="datascience.png" alt="a PNG icon representing Data Science" class="card-image">
                     <h4 class="card-title">Data Services</h4>
@@ -103,7 +261,7 @@
             </div>
             <!-- This is the end of our Second Card! Data -->
             <!-- This is our Third Card! DevOps -->
-            <div class="cards-background" onclick="devopsRedirect()"> 
+            <div class="cards-background" onclick="location.href= '/services/devops'"> 
                 <div class="cards-foreground">
                     <img src="devops.png" alt="a PNG icon representing DevOps" class="card-image">
                     <h4 class="card-title">DevOps Engineering</h4>
@@ -119,7 +277,7 @@
             </div>
             <!-- This is the end of our Third Card! Devops -->
             <!-- This is our Fourth Card! CyberSec -->
-            <div class="cards-background" onclick="cyberSecurityRedirect()"> 
+            <div class="cards-background" onclick="location.href = '/services/cybersec'"> 
                 <div class="cards-foreground">
                     <img src="cybersec.png" alt="a PNG icon representing Cyber Security" class="card-image">
                     <h4 class="card-title">Security Hardening</h4>
@@ -138,10 +296,9 @@
 
     </div>
 </div>
-<!-- End of the Services Section -->
 
-<link rel="stylesheet" href="enquire.css">
 <!-- This is the Enquire Section -->
+<link rel="stylesheet" href="enquire.css">
 <div class="enquire-section">
     <h3>Enquire</h3>
     <div class="enquire-container">
@@ -186,10 +343,9 @@
 
     </div>
 </div>
-<!-- End of Enquire Section -->
 
-<link rel="stylesheet" href="benefits.css">
 <!-- This is the Benefits Section -->
+<link rel="stylesheet" href="benefits.css">
 <div class="benefits-section">
     <h3>Benefits of MegaBytten</h3>
 
@@ -250,20 +406,46 @@
         })
     }
 
-    function awsRedirect() {
-        location.href= "/services/aws"
+    $(document).ready(function () {
+        byteImg = new Image();
+        byteImg.src = "CloudByte.png"
+    });
+
+    function switchByteImage(img){
+        img.src = "CloudByte.png"
     }
 
-    function dataRedirect(){
-        location.href= "/services/data"
+    function switchPreByteImage(img){
+        img.src = "CloudPreByte.png"
     }
 
-    function devopsRedirect(){
-        location.href= "/services/devops"
+    function basicPackageMouseEvent(enter){
+        var basicpckg = document.getElementById("basicpckg");
+        if (enter){
+            basicpckg.innerHTML = '$30 + $10/month'; 
+        } else {
+            basicpckg.innerHTML = 'Basic Package';
+        }
     }
 
-    function cyberSecurityRedirect(){
-        location.href = "/services/cybersec"
+    
+    function businessPackageMouseEvent(enter){
+        var businesspckg = document.getElementById("businesspckg")
+        if (enter){
+            businesspckg.innerHTML = '$30 + $20/month'; 
+        } else {
+            businesspckg.innerHTML = 'Business Package';
+        }
+    }
+
+    
+    function deluxePackageMouseEvent(enter){
+        var deluxepckg = document.getElementById("deluxepckg");
+        if (enter){
+            deluxepckg.innerHTML = '$50 + $25/month'; 
+        } else {
+            deluxepckg.innerHTML = 'Deluxe Package';
+        }
     }
 
     $("#submitBtn").click(function(){
