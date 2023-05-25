@@ -9,13 +9,8 @@
     padding-bottom: 10vh;
 }
 
-.services-title {
-    color: rgb(205, 178, 146);
-    text-align: center;
-    font-size: 3vw;
-}
-
 .cards-container {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
 }

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MegaBytten | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="AWS, cloud architecture, tech solutions, build cheap website, custom domain, digitise business">
+    <meta name="description" content="Exeter-based MegaBytten tech solutions: deploy AWS cloud architecture, digitise your business, setup cheap websites, and more">
+    <meta name="author" content="Ethan de Villiers">
+    <title>MegaBytten</title>
 
-    <link rel="stylesheet" href="header.css">
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>  <!-- jQuery for AJAX manual HTML submission -->
 
@@ -20,47 +24,48 @@
     flex-direction: column;"
 >
 
-    <!-- This is the !HEADER SECTION! for !MEGABYTTEN BANNER! -->
-   <header style="width: 100%;">
-            <div class="header">
+<link rel="stylesheet" href="/common/css/header.css">
+<!-- This is the !HEADER SECTION! for !MEGABYTTEN BANNER! -->
+<header style="width: 100%;">
+        <div class="header">
 
-                <div class="left-header-section"> 
-                    <a href="/">
-                        <img class="mb-logo" src="/favicon.ico"> 
-                    </a>
-                    
-                </div>
-
-                <div class="right-header-section">
-                    <button 
-                        class="button-navigation"
-                        style="
-                            color: rgba(255, 0, 0, 0.784);
-                            cursor: default; 
-                        "
-                    >
-                        Home
-                    </button>
-
-                    <button class="button-navigation">Services</button>
-                    <button class="button-navigation">About us</button>
-                </div>
+            <div class="left-header-section"> 
+                <a href="/">
+                    <img class="mb-logo" src="/favicon.ico"> 
+                </a>
+                
             </div>
-            
-    </header>
+
+            <div class="right-header-section">
+                <button 
+                    class="button-navigation"
+                    style="
+                        color: #e43131;
+                        cursor: default; 
+                    "
+                >
+                    Home
+                </button>
+
+                <button class="button-navigation">Services</button>
+                <button class="button-navigation" onclick="location.href='/about-us'">About us</button>
+            </div>
+        </div>
+        
+</header>
 
 <!-- This is Opening Image and Title Div (CloudByte) -->
 <link rel="stylesheet" href="title.css">
 <div class="title-container">
     <img class="cloud-byte"
         alt="MegaBytten's primary service icon, which is a cloud with a bite taken out of it."
-        src="CloudPreByte.png"
+        src="common/images/home/CloudPreByte.png"
         onmouseover="switchByteImage(this)"
         onmouseleave="switchPreByteImage(this)"
     >
 
     <div class="title-text">
-        <h1 style="color: rgb(255, 0, 0, 0.784);">Mega<span style="color: rgb(255, 228, 196);">Bytten</span></h1>
+        <h1 style="color: #e43131;">Mega<span style="color: rgb(255, 228, 196);">Bytten</span></h1>
         <h2>Take a Byte out of your troubles with our Tech Solutions</h2>
     </div>
 </div>
@@ -69,7 +74,7 @@
 <link rel="stylesheet" href="digitise.css">
 <div class="digitise-container">
     <div class="digitise-title">
-        <h3 class="digitise-title-text">Digitise Your Business</h3>
+        <h2 class="digitise-title-text">Digitise Your Business</h2>
     </div>
 
     <div class="benefits-section">
@@ -110,8 +115,8 @@
             </div>
         </div>
         <div class="img-row">
-            <img src="vaporwave_expertise.png" alt="Vaporwave showcasing MegaBytten experts" class="benefits-img">
-            <img src="vaporwave_digitise.png" alt="Vaporwave image showcasing someone successfully digitising their business" class="benefits-img">
+            <img src="common/images/home/vaporwave_expertise.png" alt="Vaporwave showcasing MegaBytten experts" class="benefits-img">
+            <img src="common/images/home/vaporwave_digitise.png" alt="Vaporwave image showcasing someone successfully digitising their business" class="benefits-img">
         </div>
 
     </div>
@@ -120,9 +125,9 @@
 
 <!-- This is Digitise Packages section -->
 <div class="digitise-packages-section">
-    <h4 style="font-size: 6vw; margin: 6vh;">
+    <h2 style="font-size: 6vw; margin: 6vh;">
         MegaBytten Digitising Packages
-    </h4>
+    </h2>
     <div class="digitise-packages">
             <!-- This is "Basic Package"-->
             <div
@@ -157,7 +162,7 @@
                 onmouseover="businessPackageMouseEvent(true)"
                 onmouseleave="businessPackageMouseEvent(false)"
             >
-                <div class="bubble-section" style="border-color: #e33131; background-image: url(package-prime.png);">
+                <div class="bubble-section" style="border-color: #e43131; background-image: url(package-business.png);">
                     <span class="package-name" id="businesspckg">
                         Business Package
                     </span>
@@ -219,11 +224,12 @@
 <!-- This is Services Section -->
 <link rel="stylesheet" href="services.css">
 <div class="services-container">
-<h3 class="services-title">Individual Services</h3>
-<p style="margin-left: 2vw; margin-right: 2vw;">
-    Know what you want?
+<h2 style="font-size: 6vw; margin: 6vh;">Individual Services</h2>
+<p style="margin-left: 5vw; margin-right: 5vw; margin-top: 0px;">
+    <b>Know what you want?</b>
     <br><br>
-    
+    Looking for a specific service? All of the services found in our packages (and more!) are available individually - allowing you
+    to customise your own network of services and features. Our services are classed together in 4 categories:
 </p>
 
     <div class="cards-container">
@@ -231,15 +237,15 @@
             <!-- This is our First Card! AWS -->
             <div class="cards-background" onclick="location.href= '/services/aws'"> 
                 <div class="cards-foreground">
-                    <img src="awslogo.png" alt="a PNG of Amazon Web Service's logo" class="card-image">
+                    <img src="common/images/home/awslogo.png" alt="a PNG of Amazon Web Service's logo" class="card-image">
                     <h4 class="card-title">AWS Cloud Solutions</h4>
                     <span class="card-description">
                         With the benefits of Cloud Computing growing by the day, you can utilise our AWS Experts' knowledge and deploy
-                        cloud architecture without ever requiring a full-time Cloud Architect.
+                        cloud architecture without ever hiring a full-time Cloud Architect.
                     </span>
                     <a href="/services/aws" class="card-links">Learn more...</a>
                     <strong class="card-price">
-                        From USD&dollar;40/hr
+                        From USD&dollar;10/hr
                     </strong>
                 </div>
             </div>
@@ -247,11 +253,11 @@
             <!-- This is our Second Card! Data -->
             <div class="cards-background" onclick="location.href= '/services/data'"> 
                 <div class="cards-foreground">
-                    <img src="datascience.png" alt="a PNG icon representing Data Science" class="card-image">
+                    <img src="common/images/home/datascience.png" alt="a PNG icon representing Data Science" class="card-image">
                     <h4 class="card-title">Data Services</h4>
                     <span class="card-description">
                         2.5 quintillion bytes of data are created every day. Let us crunch the numbers and pull the key findings, so that you can focus
-                        on moulding our businesses and services to optimise your customer trends.
+                        on moulding your business and services according to customer trends.
                     </span>
                     <a href="/services/data" class="card-links">Learn more...</a>
                     <strong class="card-price">
@@ -263,7 +269,7 @@
             <!-- This is our Third Card! DevOps -->
             <div class="cards-background" onclick="location.href= '/services/devops'"> 
                 <div class="cards-foreground">
-                    <img src="devops.png" alt="a PNG icon representing DevOps" class="card-image">
+                    <img src="common/images/home/devops.png" alt="a PNG icon representing DevOps" class="card-image">
                     <h4 class="card-title">DevOps Engineering</h4>
                     <span class="card-description">
                         Downtime is the enemy of customer satisfaction. Never worry about maintenance breaks or deployment lead time with
@@ -271,7 +277,7 @@
                     </span>
                     <a href="/services/devops" class="card-links">Learn more...</a>
                     <strong class="card-price">
-                        From USD&dollar;80/hr
+                        From USD&dollar;20/hr
                     </strong>
                 </div>
             </div>
@@ -279,7 +285,7 @@
             <!-- This is our Fourth Card! CyberSec -->
             <div class="cards-background" onclick="location.href = '/services/cybersec'"> 
                 <div class="cards-foreground">
-                    <img src="cybersec.png" alt="a PNG icon representing Cyber Security" class="card-image">
+                    <img src="common/images/home/cybersec.png" alt="a PNG icon representing Cyber Security" class="card-image">
                     <h4 class="card-title">Security Hardening</h4>
                     <span class="card-description">
                         Out of the 2.5 quintillion bytes of data being generated daily, some of it is bound to be yours or your customer's.
@@ -351,7 +357,7 @@
 
     <div class="points-container">
         <div class="points">
-            <img src="vaporwave_deals.png" alt="" class="point-img">
+            <img src="common/images/home/vaporwave_deals.png" alt="" class="point-img">
             <h4 class="point-title" onmouseover="benefitsHighlight()">Cost Effective</h4>
             <p>
                 Having a small team of experts on hand means you have access to our solutions and support on an as-needed basis, saving you
@@ -360,7 +366,7 @@
         </div>
 
         <div class="points">
-            <img src="vaporwave_value.png" alt="" class="point-img">
+            <img src="common/images/home/vaporwave_value.png" alt="" class="point-img">
             <h4 class="point-title">Long-Term Value</h4>
             <p>
                 Choosing MegaBytten means building a long-term relationship with a team that treats your business as our own. As our
@@ -369,7 +375,7 @@
         </div>
 
         <div class="points">
-            <img src="vaporwave_custom.png" alt="" class="point-img">
+            <img src="common/images/home/vaporwave_custom.png" alt="" class="point-img">
             <h4 class="point-title">Tailored Solutions</h4>
             <p>
                 Our team has tempered interdisciplinary experience, allowing us to create custom solutions tailored to your specific
@@ -378,7 +384,7 @@
         </div>
 
         <div class="points">
-            <img src="vaporwave_time.png" alt="" class="point-img">
+            <img src="common/images/home/vaporwave_time.png" alt="" class="point-img">
             <h4 class="point-title">Stay Specialised</h4>
             <p>
                 Save your valuable time, focus on what you do best, and leave the troubleshooting to us. Automate business functions, offload configuration and deployment,
@@ -408,15 +414,15 @@
 
     $(document).ready(function () {
         byteImg = new Image();
-        byteImg.src = "CloudByte.png"
+        byteImg.src = "common/images/home/CloudByte.png"
     });
 
     function switchByteImage(img){
-        img.src = "CloudByte.png"
+        img.src = "common/images/home/CloudByte.png"
     }
 
     function switchPreByteImage(img){
-        img.src = "CloudPreByte.png"
+        img.src = "common/images/home/CloudPreByte.png"
     }
 
     function basicPackageMouseEvent(enter){

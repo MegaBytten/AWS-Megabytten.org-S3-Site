@@ -1,0 +1,64 @@
+h1, h2{
+    color: rgb(255, 228, 196);
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10vw;
+    height: fit-content;
+}
+
+h2 {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    font-size: 4vw;
+    color: rgb(241, 219, 192);
+}
+
+.companyinfo-section{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    row-gap: 5vh;
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+}
+
+.companyinfo-grid1, .companyinfo-grid2{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: end;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.companyinfo-grid2{
+    grid-template-columns: 1fr 3fr;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title{
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(231, 206, 176);
+}
+
+p{
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    color: rgb(211, 188, 159);
+    margin-bottom: 0px;
+}
+
+.grid-imgs{
+    justify-self: center;
+    width: 20vw;
+    max-width: 100%;
+}
